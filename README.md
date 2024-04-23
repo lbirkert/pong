@@ -4,7 +4,7 @@
 
 <br>
 
-This is my version of the popular game pong written with plain HTML, CSS and JavaScript.
+This is my version of the popular game pong written in plain HTML, CSS and JavaScript.
 
 <br>
 
