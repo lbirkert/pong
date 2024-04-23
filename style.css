@@ -1,0 +1,107 @@
+/* Lucas Birkert - Pong */
+                 
+/*  ___ ___ ___ ___  */
+/* | . | . |   | . | */
+/* |  _|___|_|_|_  | */
+/* |_|         |___| */
+
+/* https://github.com/lbirkert/pong/tree/main/LICENSE */
+
+/* (c) Copyright 2024 Lucas Birkert, all rights reserved */
+
+
+/* BASIC STYLING */
+
+* {
+  font-family: "VT323", monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 40px;
+}
+
+button {
+  font-size: 20px;
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* GAME */
+
+.scores {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px; 
+}
+
+#game {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  box-sizing: content-box;
+  border: 10px solid black;
+  background-color: white;
+}
+
+#ball {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  z-index: 10;
+}
+
+.paddle {
+  transform: translateY(-50%);
+  position: absolute;
+  width: 20px;
+  height: 100px;
+  background-color: black;
+}
+
+#paddle_a {
+  left: 0;
+}
+
+#paddle_b {
+  right: 0;
+}
+
+#middle {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 0;
+  border-left: dashed 5px black;
+  border-right: dashed 5px black;
+  /*background-color: black;*/
+}
