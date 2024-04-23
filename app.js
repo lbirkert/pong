@@ -40,12 +40,15 @@ let score_a = 0;
 let score_b = 0;
 
 function updatePaddles() {
-  paddle_a.style = `top: ${player_a}px`;
-  paddle_b.style = `top: ${player_b}px`;
+  //paddle_a.style = `top: ${player_a}px`;
+  //paddle_b.style = `top: ${player_b}px`;
+  paddle_a.style = `transform: translateY(${player_a - PADDLE_HR}px)`;
+  paddle_b.style = `transform: translateY(${player_b - PADDLE_HR}px)`;
 }
 
 function updateBall() {
-  ball.style = `left: ${ball_x}px; top: ${ball_y}px`;
+  //ball.style = `left: ${ball_x}px; top: ${ball_y}px`;
+  ball.style = `transform: translate(${ball_x - BALL_R}px, ${ball_y - BALL_R}px)`;
 }
 
 function updateScores() {

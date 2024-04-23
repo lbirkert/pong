@@ -70,7 +70,7 @@ button:hover {
 }
 
 #ball {
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
   position: absolute;
   width: 20px;
   height: 20px;
@@ -81,6 +81,7 @@ button:hover {
 .paddle {
   transform: translateY(-50%);
   position: absolute;
+  top: 0;
   width: 20px;
   height: 100px;
   background-color: black;
